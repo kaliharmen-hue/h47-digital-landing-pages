@@ -96,20 +96,19 @@ const path = (value: string) => `${base}${value.replace(/^\//, "")}`;
       <h2>{data.problemHeading}</h2>
       {data.problemBody.map((paragraph) => <p>{paragraph}</p>)}
     </article>
+    <figure class="section-visual">
+      <img src={path(data.supportImages[0].src)} alt={data.supportImages[0].alt} />
+      <figcaption>{data.supportImages[0].caption}</figcaption>
+    </figure>
     <article class="accent-panel">
       <p class="small-label">The solution</p>
       <h2>{data.solutionHeading}</h2>
       {data.solutionBody.map((paragraph) => <p>{paragraph}</p>)}
     </article>
-  </section>
-
-  <section class="visual-band" aria-label={`${data.packageName} visual examples`}>
-    {data.supportImages.map((image) => (
-      <figure>
-        <img src={path(image.src)} alt={image.alt} />
-        <figcaption>{image.caption}</figcaption>
-      </figure>
-    ))}
+    <figure class="section-visual">
+      <img src={path(data.supportImages[1].src)} alt={data.supportImages[1].alt} />
+      <figcaption>{data.supportImages[1].caption}</figcaption>
+    </figure>
   </section>
 
   <section class="package-section" id="included">
