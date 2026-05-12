@@ -38,6 +38,14 @@ const packages = defineCollection({
     process: z.array(z.string()),
     objectionHeading: z.string(),
     objectionBody: z.string(),
+    objectionLinks: z
+      .array(
+        z.object({
+          label: z.string(),
+          href: z.string(),
+        }),
+      )
+      .optional(),
     finalHeading: z.string(),
     finalBody: z.string(),
     formHeading: z.string(),

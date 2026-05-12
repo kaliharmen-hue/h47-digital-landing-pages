@@ -64,7 +64,12 @@ process:
   - We deliver, manage, and review activity on an ongoing basis.
   - We use quarterly planning to refine direction and build stronger momentum.
 objectionHeading: Is Authority the right fit for every business?
-objectionBody: No. Authority is best for businesses that are ready for a more strategic retained relationship and want senior-level input, stronger consistency, and closer campaign support. If you are mainly looking for a reliable presence package, the Presence or Growth options may be a better place to start.
+objectionBody: No. Authority is best for businesses that are ready for a more strategic retained relationship and want senior-level input, stronger consistency, and closer campaign support. If you're not ready for this yet, then the Presence or Growth options may be a better place to start.
+objectionLinks:
+  - label: View Presence
+    href: social-media-management-package/
+  - label: View Growth
+    href: digital-marketing-growth-package/
 finalHeading: Ready for a more strategic marketing partner?
 finalBody: If your business needs more joined-up support, more accountability, and a stronger monthly marketing structure, Authority is built for that next stage.
 formHeading: Let's talk about where your business wants to go next

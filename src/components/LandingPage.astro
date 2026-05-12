@@ -33,6 +33,10 @@ export interface LandingPageData {
   process: string[];
   objectionHeading: string;
   objectionBody: string;
+  objectionLinks?: {
+    label: string;
+    href: string;
+  }[];
   finalHeading: string;
   finalBody: string;
   formHeading: string;
@@ -147,6 +151,13 @@ const path = (value: string) => `${base}${value.replace(/^\//, "")}`;
       <p class="small-label">Fit check</p>
       <h2>{data.objectionHeading}</h2>
       <p>{data.objectionBody}</p>
+      {data.objectionLinks && (
+        <div class="objection-links">
+          {data.objectionLinks.map((link) => (
+            <a class="button secondary" href={path(link.href)}>{link.label}</a>
+          ))}
+        </div>
+      )}
     </div>
     <form id={formId} class="enquiry-form" name={`${data.theme}-enquiry`} method="post">
       <h2>{data.formHeading}</h2>

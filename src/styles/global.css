@@ -380,6 +380,13 @@ p {
   margin-bottom: 24px;
 }
 
+.objection-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
 .enquiry-form {
   padding: 26px;
   background: #fff;
