@@ -4,7 +4,7 @@
   --ink: #172126;
   --muted: #5e6970;
   --line: rgba(23, 33, 38, 0.13);
-  --sand: #f3ede2;
+  --sand: #ffffff;
   --slate: #dfe7ea;
   --orange: #cf5d2b;
   --olive: #748460;
@@ -26,9 +26,7 @@ html {
 body {
   margin: 0;
   min-width: 320px;
-  background:
-    linear-gradient(180deg, rgba(255, 253, 248, 0.75), rgba(243, 237, 226, 0.9)),
-    var(--sand);
+  background: #ffffff;
 }
 
 body,
