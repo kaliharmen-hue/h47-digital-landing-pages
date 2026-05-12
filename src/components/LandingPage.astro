@@ -4,6 +4,11 @@ export interface LandingPageData {
   packageName: string;
   heroImage: string;
   heroImageAlt: string;
+  supportImages: {
+    src: string;
+    alt: string;
+    caption: string;
+  }[];
   theme: "presence" | "growth" | "authority";
   eyebrow: string;
   title: string;
@@ -96,6 +101,15 @@ const path = (value: string) => `${base}${value.replace(/^\//, "")}`;
       <h2>{data.solutionHeading}</h2>
       {data.solutionBody.map((paragraph) => <p>{paragraph}</p>)}
     </article>
+  </section>
+
+  <section class="visual-band" aria-label={`${data.packageName} visual examples`}>
+    {data.supportImages.map((image) => (
+      <figure>
+        <img src={path(image.src)} alt={image.alt} />
+        <figcaption>{image.caption}</figcaption>
+      </figure>
+    ))}
   </section>
 
   <section class="package-section" id="included">

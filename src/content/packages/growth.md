@@ -3,6 +3,13 @@ packageName: Growth
 pageSlug: digital-marketing-growth-package
 heroImage: assets/growth-hero.jpg
 heroImageAlt: Campaign planning and digital marketing materials for monthly growth activity
+supportImages:
+  - src: assets/growth-support-1.jpg
+    alt: Sketched magnet attracting customer icons
+    caption: Build activity around the people you want to attract.
+  - src: assets/growth-support-2.jpg
+    alt: Sketched campaign calendar with content steps and a target
+    caption: Turn content into campaigns with clearer commercial intent.
 theme: growth
 eyebrow: Growth package
 title: Monthly Marketing Support Built to Generate Momentum

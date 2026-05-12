@@ -7,6 +7,13 @@ const packages = defineCollection({
     pageSlug: z.string(),
     heroImage: z.string(),
     heroImageAlt: z.string(),
+    supportImages: z.array(
+      z.object({
+        src: z.string(),
+        alt: z.string(),
+        caption: z.string(),
+      }),
+    ),
     theme: z.enum(["presence", "growth", "authority"]),
     eyebrow: z.string(),
     title: z.string(),

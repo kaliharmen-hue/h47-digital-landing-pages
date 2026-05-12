@@ -3,6 +3,13 @@ packageName: Presence
 pageSlug: social-media-management-package
 heroImage: assets/presence-hero.jpg
 heroImageAlt: Marketing planning desk for consistent monthly social media support
+supportImages:
+  - src: assets/presence-support-1.jpg
+    alt: Sketched social content cards being pinned into a monthly plan
+    caption: Plan the content rhythm before the month gets busy.
+  - src: assets/presence-support-2.jpg
+    alt: Sketched shop sign being polished to show a visible local business
+    caption: Keep the business looking active, credible, and open.
 theme: presence
 eyebrow: Presence package
 title: Stay Visible Without Doing Your Marketing Yourself

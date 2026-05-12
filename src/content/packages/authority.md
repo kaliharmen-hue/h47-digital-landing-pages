@@ -3,6 +3,13 @@ packageName: Authority
 pageSlug: outsourced-marketing-partner-package
 heroImage: assets/authority-hero.jpg
 heroImageAlt: Strategic marketing planning workspace for retained authority-building support
+supportImages:
+  - src: assets/authority-support-1.jpg
+    alt: Sketched compass pointing toward a business goal
+    caption: Set the direction before activity turns into noise.
+  - src: assets/authority-support-2.jpg
+    alt: Sketched marketing channels converging toward a business
+    caption: Bring channels, reporting, and senior input into one rhythm.
 theme: authority
 eyebrow: Authority package
 title: An Outsourced Marketing Partner for Businesses Ready to Lead Their Market
