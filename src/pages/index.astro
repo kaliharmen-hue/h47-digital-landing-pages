@@ -22,9 +22,12 @@ const packages = (await getCollection("packages")).sort((a, b) => a.data.order -
     <section class="package-cards" aria-label="Landing pages">
       {packages.map((item) => (
         <a class={`package-card theme-${item.data.theme}`} href={path(`${item.data.pageSlug}/`)}>
-          <span>{item.data.packageName}</span>
-          <h2>{item.data.title}</h2>
-          <p>{item.data.trust}</p>
+          <div>
+            <span>{item.data.packageName}</span>
+            <h2>{item.data.title}</h2>
+            <p>{item.data.trust}</p>
+          </div>
+          <strong class="card-button">View {item.data.packageName}</strong>
         </a>
       ))}
     </section>
