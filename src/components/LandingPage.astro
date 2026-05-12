@@ -1,0 +1,167 @@
+---
+export interface LandingPageData {
+  slug: string;
+  packageName: string;
+  heroImage: string;
+  heroImageAlt: string;
+  theme: "presence" | "growth" | "authority";
+  eyebrow: string;
+  title: string;
+  subtitle: string;
+  primaryCta: string;
+  secondaryCta: string;
+  trust: string;
+  fitTitle: string;
+  fitItems: string[];
+  highlights: string[];
+  problemHeading: string;
+  problemBody: string[];
+  solutionHeading: string;
+  solutionBody: string[];
+  includedHeading: string;
+  included: string[];
+  audienceHeading: string;
+  audienceBody: string;
+  reasonsHeading: string;
+  reasons: string[];
+  processHeading: string;
+  process: string[];
+  objectionHeading: string;
+  objectionBody: string;
+  finalHeading: string;
+  finalBody: string;
+  formHeading: string;
+  formFields: string[];
+}
+
+interface Props {
+  data: LandingPageData;
+}
+
+const { data } = Astro.props;
+const formId = `${data.theme}-enquiry`;
+const base = import.meta.env.BASE_URL;
+const path = (value: string) => `${base}${value.replace(/^\//, "")}`;
+---
+
+<main class={`landing theme-${data.theme}`}>
+  <header class="site-header">
+    <a class="brand" href={base}>
+      <span class="brand-mark">H47</span>
+      <span>Digital</span>
+    </a>
+    <nav aria-label="Package navigation">
+      <a href={path("social-media-management-package/")}>Presence</a>
+      <a href={path("digital-marketing-growth-package/")}>Growth</a>
+      <a href={path("outsourced-marketing-partner-package/")}>Authority</a>
+    </nav>
+    <a class="header-cta" href={`#${formId}`}>{data.primaryCta}</a>
+  </header>
+
+  <section class="hero-section">
+    <div class="hero-copy">
+      <p class="kicker">{data.eyebrow}</p>
+      <h1>{data.title}</h1>
+      <p class="hero-subtitle">{data.subtitle}</p>
+      <div class="cta-row">
+        <a class="button primary" href={`#${formId}`}>{data.primaryCta}</a>
+        <a class="button secondary" href="#included">{data.secondaryCta}</a>
+      </div>
+      <p class="trust-line">{data.trust}</p>
+    </div>
+    <aside class="hero-panel" aria-label={`${data.packageName} summary`}>
+      <img src={path(data.heroImage)} alt={data.heroImageAlt} />
+      <div class="quick-card">
+        <p class="small-label">Best fit</p>
+        <h2>{data.fitTitle}</h2>
+        <ul>
+          {data.fitItems.map((item) => <li>{item}</li>)}
+        </ul>
+      </div>
+    </aside>
+  </section>
+
+  <section class="insight-strip" aria-label="Package highlights">
+    {data.highlights.map((highlight) => <p>{highlight}</p>)}
+  </section>
+
+  <section class="content-grid">
+    <article>
+      <p class="small-label">The problem</p>
+      <h2>{data.problemHeading}</h2>
+      {data.problemBody.map((paragraph) => <p>{paragraph}</p>)}
+    </article>
+    <article class="accent-panel">
+      <p class="small-label">The solution</p>
+      <h2>{data.solutionHeading}</h2>
+      {data.solutionBody.map((paragraph) => <p>{paragraph}</p>)}
+    </article>
+  </section>
+
+  <section class="package-section" id="included">
+    <div>
+      <p class="small-label">Included</p>
+      <h2>{data.includedHeading}</h2>
+      <ul class="check-list">
+        {data.included.map((item) => <li>{item}</li>)}
+      </ul>
+    </div>
+    <div>
+      <p class="small-label">Who it is for</p>
+      <h2>{data.audienceHeading}</h2>
+      <p>{data.audienceBody}</p>
+      <div class="reason-card">
+        <h3>{data.reasonsHeading}</h3>
+        <ul>
+          {data.reasons.map((reason) => <li>{reason}</li>)}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="process-section">
+    <div>
+      <p class="small-label">Process</p>
+      <h2>{data.processHeading}</h2>
+    </div>
+    <ol>
+      {data.process.map((step) => <li>{step}</li>)}
+    </ol>
+  </section>
+
+  <section class="conversion-section">
+    <div class="objection">
+      <p class="small-label">Fit check</p>
+      <h2>{data.objectionHeading}</h2>
+      <p>{data.objectionBody}</p>
+    </div>
+    <form id={formId} class="enquiry-form" name={`${data.theme}-enquiry`} method="post">
+      <h2>{data.formHeading}</h2>
+      <div class="form-grid">
+        {data.formFields.map((field, index) =>
+          index === data.formFields.length - 1 ? (
+            <label class="full-field">
+              <span>{field}</span>
+              <textarea name={field.toLowerCase().replaceAll(" ", "-")} rows="4"></textarea>
+            </label>
+          ) : (
+            <label>
+              <span>{field}</span>
+              <input name={field.toLowerCase().replaceAll(" ", "-")} />
+            </label>
+          )
+        )}
+      </div>
+      <button type="submit">{data.primaryCta}</button>
+    </form>
+  </section>
+
+  <section class="final-cta">
+    <div>
+      <p class="small-label">{data.packageName}</p>
+      <h2>{data.finalHeading}</h2>
+      <p>{data.finalBody}</p>
+    </div>
+    <a class="button primary" href={`#${formId}`}>{data.primaryCta}</a>
+  </section>
+</main>

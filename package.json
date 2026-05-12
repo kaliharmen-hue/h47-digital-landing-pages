@@ -1,0 +1,16 @@
+{
+  "name": "h47-digital-landing-pages",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "^5.9.0",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {}
+}

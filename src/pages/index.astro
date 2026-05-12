@@ -1,0 +1,32 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const base = import.meta.env.BASE_URL;
+const path = (value: string) => `${base}${value.replace(/^\//, "")}`;
+const packages = (await getCollection("packages")).sort((a, b) => a.data.order - b.data.order);
+---
+
+<BaseLayout
+  title="H47 Digital Landing Pages"
+  description="Package-specific landing pages for H47 Digital's Presence, Growth, and Authority retainers."
+>
+  <main class="index-page">
+    <section class="index-hero">
+      <p class="kicker">H47 Digital</p>
+      <h1>Three focused landing pages for clearer monthly marketing enquiries.</h1>
+      <p>
+        Presence, Growth, and Authority each speak to a different buying moment, from reliable visibility through to a strategic retained marketing partnership.
+      </p>
+    </section>
+    <section class="package-cards" aria-label="Landing pages">
+      {packages.map((item) => (
+        <a class={`package-card theme-${item.data.theme}`} href={path(`${item.data.pageSlug}/`)}>
+          <span>{item.data.packageName}</span>
+          <h2>{item.data.title}</h2>
+          <p>{item.data.trust}</p>
+        </a>
+      ))}
+    </section>
+  </main>
+</BaseLayout>

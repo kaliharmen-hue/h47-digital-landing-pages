@@ -1,0 +1,20 @@
+---
+import { getCollection } from "astro:content";
+import LandingPage from "../components/LandingPage.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+export async function getStaticPaths() {
+  const packages = await getCollection("packages");
+
+  return packages.map((entry) => ({
+    params: { slug: entry.data.pageSlug },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+---
+
+<BaseLayout title={`${entry.data.packageName} | H47 Digital`} description={entry.data.subtitle}>
+  <LandingPage data={{ ...entry.data, slug: entry.data.pageSlug }} />
+</BaseLayout>
