@@ -97,24 +97,28 @@ const path = (value: string) => `${base}${value.replace(/^\//, "")}`;
   </section>
 
   <section class="content-grid">
-    <article>
-      <p class="small-label">The problem</p>
-      <h2>{data.problemHeading}</h2>
-      {data.problemBody.map((paragraph) => <p>{paragraph}</p>)}
-    </article>
-    <figure class="section-visual">
-      <img src={path(data.supportImages[0].src)} alt={data.supportImages[0].alt} />
-      <figcaption>{data.supportImages[0].caption}</figcaption>
-    </figure>
-    <article class="accent-panel">
-      <p class="small-label">The solution</p>
-      <h2>{data.solutionHeading}</h2>
-      {data.solutionBody.map((paragraph) => <p>{paragraph}</p>)}
-    </article>
-    <figure class="section-visual">
-      <img src={path(data.supportImages[1].src)} alt={data.supportImages[1].alt} />
-      <figcaption>{data.supportImages[1].caption}</figcaption>
-    </figure>
+    <div class="story-panel">
+      <article>
+        <p class="small-label">The problem</p>
+        <h2>{data.problemHeading}</h2>
+        {data.problemBody.map((paragraph) => <p>{paragraph}</p>)}
+      </article>
+      <figure class="section-visual">
+        <img src={path(data.supportImages[0].src)} alt={data.supportImages[0].alt} />
+        <figcaption>{data.supportImages[0].caption}</figcaption>
+      </figure>
+    </div>
+    <div class="story-panel accent-panel">
+      <article>
+        <p class="small-label">The solution</p>
+        <h2>{data.solutionHeading}</h2>
+        {data.solutionBody.map((paragraph) => <p>{paragraph}</p>)}
+      </article>
+      <figure class="section-visual">
+        <img src={path(data.supportImages[1].src)} alt={data.supportImages[1].alt} />
+        <figcaption>{data.supportImages[1].caption}</figcaption>
+      </figure>
+    </div>
   </section>
 
   <section class="package-section" id="included">

@@ -169,7 +169,7 @@ p {
   object-fit: contain;
 }
 
-.content-grid article,
+.story-panel,
 .section-visual,
 .package-section,
 .process-section,
@@ -279,9 +279,15 @@ p {
 
 .content-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   gap: 24px;
   margin-bottom: 24px;
+}
+
+.story-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 1fr);
+  overflow: hidden;
+  background: rgba(255, 253, 248, 0.88);
 }
 
 .section-visual {
@@ -306,21 +312,21 @@ p {
   line-height: 1.45;
 }
 
-.content-grid article,
+.story-panel article,
 .package-section,
 .process-section,
 .conversion-section {
   padding: clamp(26px, 4vw, 44px);
 }
 
-.content-grid p:not(.small-label),
+.story-panel p:not(.small-label),
 .package-section p,
 .conversion-section p,
 .final-cta p {
   margin-top: 18px;
 }
 
-.accent-panel {
+.story-panel.accent-panel {
   background: color-mix(in srgb, var(--theme) 10%, #fffdf8);
 }
 
@@ -538,7 +544,7 @@ button {
 @media (max-width: 920px) {
   .site-header,
   .hero-section,
-  .content-grid,
+  .story-panel,
   .package-section,
   .process-section,
   .conversion-section,
