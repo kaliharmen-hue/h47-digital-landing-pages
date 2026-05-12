@@ -2,7 +2,7 @@
 packageName: Authority
 pageSlug: outsourced-marketing-partner-package
 heroImage: assets/authority-hero.jpg
-heroImageAlt: Strategic marketing planning workspace for retained authority-building support
+heroImageAlt: Strategic marketing planning workspace for authority-building support
 supportImages:
   - src: assets/authority-support-1.jpg
     alt: Sketched compass pointing toward a business goal
@@ -13,7 +13,7 @@ supportImages:
 theme: authority
 eyebrow: Authority package
 title: An Outsourced Marketing Partner for Businesses Ready to Lead Their Market
-subtitle: Authority is H47 Digital's highest-level retainer for established businesses that want stronger visibility, better lead quality, and more coordinated monthly marketing support with senior input built in.
+subtitle: Authority is H47 Digital's highest-level marketing programme for established businesses that want stronger visibility, better lead quality, and more coordinated monthly support with senior input built in.
 primaryCta: Book a Strategic Discovery Call
 secondaryCta: See What Authority Includes
 trust: For businesses that want more than execution and need a marketing partner with structure, insight, and accountability.
@@ -35,7 +35,7 @@ problemBody:
 solutionHeading: Strategic monthly support that helps your business build authority and momentum
 solutionBody:
   - Authority combines ongoing marketing delivery with deeper strategic input, better reporting, and a clearer quarterly structure.
-  - It is designed for businesses that want a more involved retained partner who can support market presence, campaign coordination, and stronger consistency across activity.
+  - It is designed for businesses that want a more involved marketing partner who can support market presence, campaign coordination, and stronger consistency across activity.
 includedHeading: What you get with Authority
 included:
   - Everything in Growth at a deeper level where appropriate
@@ -51,7 +51,7 @@ audienceHeading: Best suited to established businesses that want a stronger mark
 audienceBody: Authority is a strong fit for specialist professional firms, premium service businesses, reputation-led SMEs, and companies that want a more strategic outsourced marketing function rather than isolated monthly tasks.
 reasonsHeading: Why businesses choose Authority
 reasons:
-  - It gives them a more hands-on retained marketing partner
+  - It gives them a more hands-on marketing partner
   - It reduces pressure on senior internal teams
   - It creates more consistency across monthly activity
   - It supports both visibility and lead quality
@@ -64,7 +64,7 @@ process:
   - We deliver, manage, and review activity on an ongoing basis.
   - We use quarterly planning to refine direction and build stronger momentum.
 objectionHeading: Is Authority the right fit for every business?
-objectionBody: No. Authority is best for businesses that are ready for a more strategic retained relationship and want senior-level input, stronger consistency, and closer campaign support. If you're not ready for this yet, then the Presence or Growth options may be a better place to start.
+objectionBody: No. Authority is best for businesses that are ready for a more strategic monthly programme and want senior-level input, stronger consistency, and closer campaign support. If you're not ready for this yet, then the Presence or Growth options may be a better place to start.
 objectionLinks:
   - label: View Presence
     href: social-media-management-package/
@@ -84,4 +84,4 @@ formFields:
 order: 3
 ---
 
-Higher-value strategic retained marketing support for established SMEs that need senior input.
+Higher-value strategic marketing support for established SMEs that need senior input.

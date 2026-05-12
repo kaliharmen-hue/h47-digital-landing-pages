@@ -13,7 +13,7 @@ supportImages:
 theme: presence
 eyebrow: Presence package
 title: Stay Visible Without Doing Your Marketing Yourself
-subtitle: H47 Digital's Presence package gives owner-led businesses consistent social media support, branded content, and a dependable monthly rhythm without the cost or complexity of a larger campaign retainer.
+subtitle: H47 Digital's Presence package gives owner-led businesses consistent social media support, branded content, and a dependable monthly rhythm without the cost or complexity of a larger marketing programme.
 primaryCta: Book a Discovery Call
 secondaryCta: See What's Included
 trust: Built for owner-led businesses that need consistency, not chaos.
