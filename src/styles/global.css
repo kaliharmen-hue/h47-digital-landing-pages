@@ -145,7 +145,7 @@ p {
 }
 
 .hero-heading {
-  max-width: 880px;
+  max-width: 1120px;
   margin: 0 auto;
   padding: clamp(24px, 4vw, 44px) clamp(22px, 5vw, 64px) 10px;
   text-align: center;
@@ -153,19 +153,19 @@ p {
 
 .hero-heading h1 {
   margin-top: 12px;
-  font-size: clamp(2.65rem, 5.6vw, 5rem);
-  line-height: 0.95;
+  font-size: clamp(2.8rem, 5.8vw, 5.6rem);
+  line-height: 0.92;
 }
 
 .hero-image {
   display: flex;
   justify-content: center;
-  padding: 0 clamp(18px, 5vw, 70px);
+  padding: 0 clamp(12px, 3vw, 42px);
 }
 
 .hero-image img {
-  width: min(760px, 100%);
-  max-height: 360px;
+  width: min(980px, 100%);
+  max-height: 470px;
   object-fit: contain;
 }
 
