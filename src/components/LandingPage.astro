@@ -68,9 +68,14 @@ const path = (value: string) => `${base}${value.replace(/^\//, "")}`;
   </header>
 
   <section class="hero-section">
-    <div class="hero-copy">
+    <div class="hero-heading">
       <p class="kicker">{data.eyebrow}</p>
       <h1>{data.title}</h1>
+    </div>
+    <div class="hero-image">
+      <img src={path(data.heroImage)} alt={data.heroImageAlt} />
+    </div>
+    <div class="hero-copy">
       <p class="hero-subtitle">{data.subtitle}</p>
       <div class="cta-row">
         <a class="button primary" href={`#${formId}`}>{data.primaryCta}</a>
@@ -78,15 +83,12 @@ const path = (value: string) => `${base}${value.replace(/^\//, "")}`;
       </div>
       <p class="trust-line">{data.trust}</p>
     </div>
-    <aside class="hero-panel" aria-label={`${data.packageName} summary`}>
-      <img src={path(data.heroImage)} alt={data.heroImageAlt} />
-      <div class="quick-card">
-        <p class="small-label">Best fit</p>
-        <h2>{data.fitTitle}</h2>
-        <ul>
-          {data.fitItems.map((item) => <li>{item}</li>)}
-        </ul>
-      </div>
+    <aside class="quick-card" aria-label={`${data.packageName} summary`}>
+      <p class="small-label">Best fit</p>
+      <h2>{data.fitTitle}</h2>
+      <ul>
+        {data.fitItems.map((item) => <li>{item}</li>)}
+      </ul>
     </aside>
   </section>
 
