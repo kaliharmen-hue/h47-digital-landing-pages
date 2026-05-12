@@ -63,6 +63,9 @@ process:
   - You receive a monthly update and review.
 objectionHeading: Not sure if this is enough support?
 objectionBody: If you need a stronger lead-generation focus, more campaign activity, or support across more channels, Growth may be the better fit. Presence is designed for businesses that need consistency and visibility first.
+objectionLinks:
+  - label: View Growth
+    href: digital-marketing-growth-package/
 finalHeading: Ready to stop letting your marketing drift?
 finalBody: If you want a steady, professional social media presence without the stress of doing it all yourself, Presence gives you a clear place to start.
 formHeading: Let's talk about your visibility goals

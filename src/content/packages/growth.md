@@ -63,6 +63,9 @@ process:
   - We review performance and refine the next month's activity.
 objectionHeading: What if you need more strategic input?
 objectionBody: If your business needs a more senior outsourced marketing partner, stronger authority-building, and closer quarterly planning, Authority may be the better fit. Growth is designed for businesses that want steady monthly marketing momentum with clearer lead-generation intent.
+objectionLinks:
+  - label: View Authority
+    href: outsourced-marketing-partner-package/
 finalHeading: Ready for more than just "keeping the socials going"?
 finalBody: Growth is designed for businesses that want their marketing to feel more coordinated, more purposeful, and more commercially useful month after month.
 formHeading: Tell us where your marketing is getting stuck
