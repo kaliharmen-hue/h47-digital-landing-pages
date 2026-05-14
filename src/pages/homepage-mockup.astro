@@ -1,0 +1,644 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const base = import.meta.env.BASE_URL;
+const asset = (value: string) => `${base}${value.replace(/^\//, "")}`;
+---
+
+<BaseLayout
+  title="H47 Homepage Mockup | Websites and Marketing"
+  description="A proposed H47 homepage structure that routes customers quickly into websites, marketing, SEO, and design support."
+>
+  <main class="mockup-page">
+    <header class="mockup-nav" aria-label="Proposed site navigation">
+      <a class="mockup-brand" href="/">
+        <span>H47</span>
+        <strong>Hangar47</strong>
+      </a>
+      <nav>
+        <a href="#websites">Websites</a>
+        <a href="#marketing">Marketing</a>
+        <a href="#seo">SEO</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="nav-action" href="#contact">Book a call</a>
+    </header>
+
+    <section class="mockup-hero" style={`background-image: linear-gradient(90deg, rgba(12, 20, 24, 0.88), rgba(12, 20, 24, 0.58), rgba(12, 20, 24, 0.1)), url('${asset("assets/growth-hero.jpg")}');`}>
+      <div class="hero-inner">
+        <p class="eyebrow">Websites, marketing and growth support</p>
+        <h1>Get found, look credible, and turn attention into enquiries.</h1>
+        <p class="hero-copy">
+          Whether you need a website that works harder or marketing that brings in better leads, H47 helps small businesses choose the right next step without the jargon.
+        </p>
+        <div class="hero-actions" aria-label="Primary customer journeys">
+          <a href="#websites">I need a website</a>
+          <a href="#marketing">I need marketing</a>
+          <a href="#start">Help me choose</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="route-band" id="start" aria-labelledby="start-title">
+      <div class="section-heading">
+        <p class="eyebrow">Start here</p>
+        <h2 id="start-title">What do you need help with?</h2>
+        <p>Customers should not have to understand H47's internal structure. They should see their problem, click once, and land on the right service path.</p>
+      </div>
+
+      <div class="route-grid">
+        <a class="route-card website-route" href="#websites">
+          <span>01</span>
+          <h3>Build or improve my website</h3>
+          <p>Website design, packages, hosting, maintenance, domains, security and content updates.</p>
+          <strong>Go to websites</strong>
+        </a>
+        <a class="route-card marketing-route" href="#marketing">
+          <span>02</span>
+          <h3>Bring in more leads and enquiries</h3>
+          <p>Social media, PPC, email, LinkedIn, campaigns, copy and ongoing marketing support.</p>
+          <strong>Go to marketing</strong>
+        </a>
+        <a class="route-card seo-route" href="#seo">
+          <span>03</span>
+          <h3>Get found on Google</h3>
+          <p>SEO audits, search visibility, local rankings, website improvements and ongoing optimisation.</p>
+          <strong>Go to SEO</strong>
+        </a>
+        <a class="route-card design-route" href="#design">
+          <span>04</span>
+          <h3>Make the business look sharper</h3>
+          <p>Graphic design, print, branded campaign assets and practical creative support.</p>
+          <strong>Go to design</strong>
+        </a>
+      </div>
+    </section>
+
+    <section class="two-paths" aria-labelledby="paths-title">
+      <div class="section-heading compact">
+        <p class="eyebrow">The homepage model</p>
+        <h2 id="paths-title">Two equal front doors, one joined-up partner.</h2>
+      </div>
+
+      <div class="path-grid">
+        <article class="path-panel" id="websites">
+          <p class="eyebrow">Websites</p>
+          <h3>For businesses that need a stronger online base.</h3>
+          <p>
+            This path should feel practical and confidence-building. It is for people who know their site is outdated, missing, slow, insecure, or not converting visitors.
+          </p>
+          <ul>
+            <li>Website design and rebuilds</li>
+            <li>Website packages</li>
+            <li>Hosting, domains and maintenance</li>
+            <li>Website security and backups</li>
+            <li>Website SEO foundations</li>
+          </ul>
+          <a href="#">Explore website support</a>
+        </article>
+
+        <article class="path-panel marketing-panel" id="marketing">
+          <p class="eyebrow">Marketing</p>
+          <h3>For businesses that need more visibility, leads and consistency.</h3>
+          <p>
+            This path should speak to active growth problems. It is for customers who already have a site, or do not want a new one yet, but need better marketing momentum.
+          </p>
+          <ul>
+            <li>Social media management</li>
+            <li>PPC and Google Ads</li>
+            <li>Email marketing and campaigns</li>
+            <li>LinkedIn lead generation</li>
+            <li>Copywriting and content support</li>
+          </ul>
+          <a href="#">Explore marketing support</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="seo-bridge" id="seo" aria-labelledby="seo-title">
+      <div>
+        <p class="eyebrow">Shared growth lever</p>
+        <h2 id="seo-title">SEO belongs in both journeys, so make it easy to find.</h2>
+      </div>
+      <p>
+        Some customers arrive wanting SEO directly. Others discover they need it after talking about a website or marketing. Give SEO its own navigation item, then cross-link it from both website and marketing pages.
+      </p>
+      <a href="#">Start with a free SEO audit</a>
+    </section>
+
+    <section class="intent-strip" id="design" aria-label="Fast links by customer intent">
+      <a href="#">New website</a>
+      <a href="#">Website hosting</a>
+      <a href="#">SEO audit</a>
+      <a href="#">Social media</a>
+      <a href="#">Google Ads</a>
+      <a href="#">Email marketing</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Design and print</a>
+    </section>
+
+    <section class="proof-band" id="work" aria-labelledby="proof-title">
+      <div class="section-heading">
+        <p class="eyebrow">Why H47</p>
+        <h2 id="proof-title">Keep the proof short and concrete.</h2>
+      </div>
+      <div class="proof-grid">
+        <article>
+          <strong>Local support</strong>
+          <p>A real team in Lymington for businesses that want people they can actually speak to.</p>
+        </article>
+        <article>
+          <strong>Joined-up delivery</strong>
+          <p>Website, hosting, SEO and marketing support can work together instead of being treated as separate jobs.</p>
+        </article>
+        <article>
+          <strong>Long-term help</strong>
+          <p>Position retainers as ongoing improvement, not just monthly tasks or content output.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="final-band" id="contact" aria-labelledby="contact-title">
+      <div>
+        <p class="eyebrow">Not sure where to start?</p>
+        <h2 id="contact-title">Tell us what you are trying to fix. We will point you in the right direction.</h2>
+      </div>
+      <a href="#">Book a free 30 minute call</a>
+    </section>
+  </main>
+</BaseLayout>
+
+<style>
+  :global(body) {
+    background: #f6f3ee;
+  }
+
+  .mockup-page {
+    --ink: #132025;
+    --muted: #5b666c;
+    --line: rgba(19, 32, 37, 0.14);
+    --paper: #f6f3ee;
+    --white: #ffffff;
+    --teal: #1c9a93;
+    --red: #b94d3f;
+    --green: #697f49;
+    --blue: #486e88;
+    --gold: #b8842f;
+    width: min(1220px, calc(100% - 28px));
+    margin: 0 auto;
+    color: var(--ink);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .mockup-page a {
+    text-decoration: none;
+  }
+
+  .mockup-page h1,
+  .mockup-page h2,
+  .mockup-page h3,
+  .mockup-page p {
+    margin: 0;
+  }
+
+  .mockup-page h1,
+  .mockup-page h2,
+  .mockup-page h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    letter-spacing: 0;
+  }
+
+  .mockup-page p {
+    color: var(--muted);
+    line-height: 1.6;
+  }
+
+  .mockup-nav {
+    min-height: 74px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .mockup-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--ink);
+  }
+
+  .mockup-brand span {
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    background: var(--ink);
+    color: #fff;
+    font-weight: 900;
+  }
+
+  .mockup-brand strong,
+  .mockup-nav nav a,
+  .nav-action,
+  .hero-actions a,
+  .path-panel a,
+  .seo-bridge a,
+  .final-band a {
+    font-size: 0.82rem;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  .mockup-nav nav {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .mockup-nav nav a,
+  .nav-action {
+    min-height: 42px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 11px 14px;
+    color: var(--ink);
+    border: 1px solid transparent;
+  }
+
+  .mockup-nav nav a:hover {
+    border-color: var(--line);
+    background: rgba(255, 255, 255, 0.54);
+  }
+
+  .nav-action {
+    background: var(--ink);
+    color: #fff;
+  }
+
+  .mockup-hero {
+    min-height: min(720px, calc(100vh - 94px));
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+  }
+
+  .hero-inner {
+    width: min(760px, 100%);
+    padding: clamp(28px, 7vw, 86px);
+  }
+
+  .eyebrow {
+    color: var(--teal);
+    font-size: 0.76rem;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    line-height: 1.4;
+    text-transform: uppercase;
+  }
+
+  .mockup-hero .eyebrow {
+    color: #9be3de;
+  }
+
+  .mockup-hero h1 {
+    margin-top: 14px;
+    max-width: 720px;
+    color: #fff;
+    font-size: clamp(3.1rem, 7vw, 6.7rem);
+    line-height: 0.9;
+  }
+
+  .hero-copy {
+    max-width: 610px;
+    margin-top: 24px;
+    color: rgba(255, 255, 255, 0.86);
+    font-size: 1.08rem;
+  }
+
+  .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 34px;
+  }
+
+  .hero-actions a,
+  .path-panel a,
+  .seo-bridge a,
+  .final-band a {
+    min-height: 46px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 17px;
+    background: #fff;
+    color: var(--ink);
+  }
+
+  .hero-actions a:first-child {
+    background: var(--teal);
+    color: #fff;
+  }
+
+  .hero-actions a:nth-child(2) {
+    background: var(--red);
+    color: #fff;
+  }
+
+  .route-band,
+  .two-paths,
+  .proof-band {
+    padding: clamp(28px, 5vw, 58px) 0;
+  }
+
+  .section-heading {
+    display: grid;
+    grid-template-columns: minmax(260px, 0.75fr) minmax(320px, 1fr);
+    gap: 28px;
+    align-items: end;
+    margin-bottom: 22px;
+  }
+
+  .section-heading.compact {
+    align-items: start;
+  }
+
+  .section-heading h2,
+  .seo-bridge h2,
+  .final-band h2 {
+    margin-top: 8px;
+    font-size: clamp(2rem, 4vw, 4.4rem);
+    line-height: 0.95;
+  }
+
+  .section-heading p:not(.eyebrow) {
+    max-width: 640px;
+  }
+
+  .route-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+
+  .route-card {
+    min-height: 315px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px;
+    background: #fff;
+    border: 1px solid var(--line);
+    color: var(--ink);
+  }
+
+  .route-card span {
+    color: var(--accent);
+    font-weight: 900;
+  }
+
+  .route-card h3 {
+    margin-top: 38px;
+    font-size: 1.72rem;
+    line-height: 1;
+  }
+
+  .route-card p {
+    margin-top: 18px;
+  }
+
+  .route-card strong {
+    display: inline-flex;
+    align-self: flex-start;
+    margin-top: 22px;
+    color: var(--accent);
+    font-size: 0.82rem;
+    text-transform: uppercase;
+  }
+
+  .website-route {
+    --accent: var(--teal);
+    border-top: 8px solid var(--teal);
+  }
+
+  .marketing-route {
+    --accent: var(--red);
+    border-top: 8px solid var(--red);
+  }
+
+  .seo-route {
+    --accent: var(--blue);
+    border-top: 8px solid var(--blue);
+  }
+
+  .design-route {
+    --accent: var(--gold);
+    border-top: 8px solid var(--gold);
+  }
+
+  .path-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .path-panel {
+    min-height: 620px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: clamp(28px, 5vw, 56px);
+    background: #102428;
+    color: #fff;
+  }
+
+  .path-panel.marketing-panel {
+    background: #401f20;
+  }
+
+  .path-panel .eyebrow {
+    color: #9be3de;
+  }
+
+  .path-panel.marketing-panel .eyebrow {
+    color: #f2aaa1;
+  }
+
+  .path-panel h3 {
+    margin-top: 16px;
+    max-width: 540px;
+    font-size: clamp(2.3rem, 4.2vw, 4.6rem);
+    line-height: 0.92;
+  }
+
+  .path-panel p {
+    max-width: 550px;
+    margin-top: 24px;
+    color: rgba(255, 255, 255, 0.78);
+  }
+
+  .path-panel ul {
+    display: grid;
+    gap: 0;
+    margin: 36px 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .path-panel li {
+    padding: 15px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+    color: rgba(255, 255, 255, 0.88);
+    font-weight: 800;
+  }
+
+  .seo-bridge {
+    display: grid;
+    grid-template-columns: 0.92fr 1.08fr auto;
+    gap: 28px;
+    align-items: center;
+    margin: 18px 0;
+    padding: clamp(28px, 5vw, 54px);
+    background: #fff;
+    border-left: 10px solid var(--blue);
+  }
+
+  .seo-bridge p {
+    max-width: 640px;
+  }
+
+  .seo-bridge a,
+  .final-band a {
+    background: var(--ink);
+    color: #fff;
+    white-space: nowrap;
+  }
+
+  .intent-strip {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    margin: 18px 0 0;
+    background: var(--line);
+    border: 1px solid var(--line);
+  }
+
+  .intent-strip a {
+    min-height: 74px;
+    display: flex;
+    align-items: center;
+    padding: 18px;
+    background: var(--ink);
+    color: #fff;
+    font-weight: 900;
+  }
+
+  .proof-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+
+  .proof-grid article {
+    min-height: 210px;
+    padding: 26px;
+    background: #fff;
+    border: 1px solid var(--line);
+  }
+
+  .proof-grid strong {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.7rem;
+  }
+
+  .proof-grid p {
+    margin-top: 18px;
+  }
+
+  .final-band {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 28px;
+    align-items: center;
+    margin: 0 0 60px;
+    padding: clamp(30px, 5vw, 62px);
+    background: var(--green);
+    color: #fff;
+  }
+
+  .final-band .eyebrow,
+  .final-band h2 {
+    color: #fff;
+  }
+
+  @media (max-width: 980px) {
+    .mockup-nav,
+    .section-heading,
+    .path-grid,
+    .seo-bridge,
+    .proof-grid,
+    .final-band {
+      grid-template-columns: 1fr;
+    }
+
+    .mockup-nav nav {
+      justify-content: flex-start;
+      flex-wrap: wrap;
+    }
+
+    .route-grid,
+    .intent-strip {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .path-panel {
+      min-height: auto;
+    }
+
+    .seo-bridge a,
+    .final-band a {
+      justify-self: start;
+      white-space: normal;
+    }
+  }
+
+  @media (max-width: 620px) {
+    .mockup-page {
+      width: min(100% - 18px, 1220px);
+    }
+
+    .mockup-nav nav a,
+    .nav-action,
+    .hero-actions a {
+      width: 100%;
+    }
+
+    .mockup-hero {
+      min-height: 650px;
+    }
+
+    .hero-inner,
+    .route-card,
+    .path-panel,
+    .seo-bridge,
+    .proof-grid article,
+    .final-band {
+      padding: 24px;
+    }
+
+    .mockup-hero h1 {
+      font-size: 3.15rem;
+    }
+
+    .route-grid,
+    .intent-strip {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
