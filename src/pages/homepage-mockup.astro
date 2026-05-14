@@ -150,8 +150,8 @@ const asset = (value: string) => `${base}${value.replace(/^\//, "")}`;
 
     <section class="final-band" id="contact" aria-labelledby="contact-title">
       <div>
-        <p class="eyebrow">Not sure where to start?</p>
-        <h2 id="contact-title">Tell us what you are trying to fix. We will point you in the right direction.</h2>
+        <h2 id="contact-title">Not sure where to start?</h2>
+        <p>Tell us what you are trying to fix. We will point you in the right direction.</p>
       </div>
       <a href="#">Book a free 30 minute call</a>
     </section>
@@ -594,19 +594,26 @@ const asset = (value: string) => `${base}${value.replace(/^\//, "")}`;
   }
 
   .final-band {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    gap: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
     align-items: center;
     margin: 0 0 60px;
     padding: clamp(30px, 5vw, 62px);
     background: var(--green);
     color: #fff;
+    text-align: center;
   }
 
-  .final-band .eyebrow,
   .final-band h2 {
     color: #fff;
+  }
+
+  .final-band p {
+    max-width: 760px;
+    margin-top: 16px;
+    color: rgba(255, 255, 255, 0.86);
+    font-size: 1.125rem;
   }
 
   @media (max-width: 980px) {
