@@ -175,7 +175,7 @@ const asset = (value: string) => `${base}${value.replace(/^\//, "")}`;
     --blue: #486e88;
     --gold: #b8842f;
     --cream: #f6f3ee;
-    width: min(1220px, calc(100% - 28px));
+    width: min(1500px, calc(100% - 48px));
     margin: 0 auto;
     color: var(--ink);
     font-family: Arial, Helvetica, sans-serif;
@@ -409,15 +409,15 @@ const asset = (value: string) => `${base}${value.replace(/^\//, "")}`;
   .route-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 12px;
+    gap: 16px;
   }
 
   .route-card {
-    min-height: 315px;
+    min-height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 24px;
+    padding: 32px;
     background: #fff;
     border: 1px solid var(--line);
     color: var(--ink);
@@ -429,8 +429,8 @@ const asset = (value: string) => `${base}${value.replace(/^\//, "")}`;
   }
 
   .route-card h3 {
-    margin-top: 38px;
-    font-size: 1.72rem;
+    margin-top: 42px;
+    font-size: 2rem;
     line-height: 1;
   }
 
