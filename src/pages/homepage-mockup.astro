@@ -76,15 +76,12 @@ const asset = (value: string) => `${base}${value.replace(/^\//, "")}`;
     </section>
 
     <section class="two-paths" aria-labelledby="paths-title">
-      <div class="section-heading compact">
-        <p class="eyebrow">The homepage model</p>
-        <h2 id="paths-title">Two equal front doors, one joined-up partner.</h2>
-      </div>
+      <h2 id="paths-title" class="visually-hidden">Website and marketing support</h2>
 
       <div class="path-grid">
         <article class="path-panel" id="websites">
           <p class="eyebrow">Websites</p>
-          <h3>For businesses that need a stronger online base.</h3>
+          <h3>Create the online home your customers expect.</h3>
           <p>
             This path should feel practical and confidence-building. It is for people who know their site is outdated, missing, slow, insecure, or not converting visitors.
           </p>
@@ -100,7 +97,7 @@ const asset = (value: string) => `${base}${value.replace(/^\//, "")}`;
 
         <article class="path-panel marketing-panel" id="marketing">
           <p class="eyebrow">Marketing</p>
-          <h3>For businesses that need more visibility, leads and consistency.</h3>
+          <h3>Reach more of the people who are ready to buy.</h3>
           <p>
             This path should speak to active growth problems. It is for customers who already have a site, or do not want a new one yet, but need better marketing momentum.
           </p>
@@ -213,6 +210,18 @@ const asset = (value: string) => `${base}${value.replace(/^\//, "")}`;
   .mockup-page p {
     color: var(--muted);
     line-height: 1.6;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
   }
 
   .mockup-nav {
