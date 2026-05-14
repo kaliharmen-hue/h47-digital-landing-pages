@@ -280,11 +280,11 @@ const asset = (value: string) => `${base}${value.replace(/^\//, "")}`;
 
   .mockup-hero {
     width: 100vw;
-    min-height: min(820px, calc(100vh - 74px));
+    min-height: clamp(720px, 48vw, 940px);
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin: 0 calc(50% - 50vw) 18px;
-    background-position: center right;
+    background-position: center 58%;
     background-size: cover;
     color: #fff;
   }
@@ -297,6 +297,7 @@ const asset = (value: string) => `${base}${value.replace(/^\//, "")}`;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    transform: translateY(clamp(18px, 4vw, 58px));
   }
 
   .eyebrow {
@@ -317,7 +318,7 @@ const asset = (value: string) => `${base}${value.replace(/^\//, "")}`;
     max-width: 1340px;
     color: #fff;
     font-size: clamp(3rem, 5.25vw, 6.15rem);
-    line-height: 0.92;
+    line-height: 1.02;
     text-wrap: balance;
   }
 
@@ -333,7 +334,7 @@ const asset = (value: string) => `${base}${value.replace(/^\//, "")}`;
     display: flex;
     flex-wrap: wrap;
     gap: 14px;
-    margin-top: 42px;
+    margin-top: 52px;
   }
 
   .hero-actions a,
