@@ -25,7 +25,7 @@ const asset = (value: string) => `${base}${value.replace(/^\//, "")}`;
       <a class="nav-action" href="#contact">Book a call</a>
     </header>
 
-    <section class="mockup-hero" style={`background-image: linear-gradient(90deg, rgba(12, 20, 24, 0.78), rgba(12, 20, 24, 0.34), rgba(12, 20, 24, 0)), url('${asset("assets/h47-homepage-hero.png")}');`}>
+    <section class="mockup-hero" style={`background-image: linear-gradient(180deg, rgba(246, 243, 238, 0.2), rgba(246, 243, 238, 0.08)), url('${asset("assets/h47-homepage-hero-2.png")}');`}>
       <div class="hero-inner">
         <p class="eyebrow">Websites, marketing and growth support</p>
         <h1>
@@ -185,6 +185,7 @@ const asset = (value: string) => `${base}${value.replace(/^\//, "")}`;
     --green: #697f49;
     --blue: #486e88;
     --gold: #b8842f;
+    --cream: #f6f3ee;
     width: min(1220px, calc(100% - 28px));
     margin: 0 auto;
     color: var(--ink);
@@ -284,9 +285,9 @@ const asset = (value: string) => `${base}${value.replace(/^\//, "")}`;
     display: flex;
     align-items: flex-start;
     margin: 0 calc(50% - 50vw) 18px;
-    background-position: center 58%;
+    background-position: center bottom;
     background-size: cover;
-    color: #fff;
+    color: var(--ink);
   }
 
   .hero-inner {
@@ -297,7 +298,7 @@ const asset = (value: string) => `${base}${value.replace(/^\//, "")}`;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    transform: translateY(clamp(18px, 4vw, 58px));
+    transform: translateY(clamp(34px, 5vw, 78px));
   }
 
   .eyebrow {
@@ -310,13 +311,13 @@ const asset = (value: string) => `${base}${value.replace(/^\//, "")}`;
   }
 
   .mockup-hero .eyebrow {
-    color: #9be3de;
+    color: var(--teal);
   }
 
   .mockup-hero h1 {
     margin-top: 14px;
     max-width: 1340px;
-    color: #fff;
+    color: var(--ink);
     font-size: clamp(3rem, 5.25vw, 6.15rem);
     line-height: 1.02;
     text-wrap: balance;
