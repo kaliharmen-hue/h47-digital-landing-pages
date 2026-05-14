@@ -203,6 +203,7 @@ const asset = (value: string) => `${base}${value.replace(/^\//, "")}`;
 
   .mockup-page p {
     color: var(--muted);
+    font-size: 1rem;
     line-height: 1.6;
   }
 
@@ -250,7 +251,7 @@ const asset = (value: string) => `${base}${value.replace(/^\//, "")}`;
   .path-panel a,
   .seo-bridge a,
   .final-band a {
-    font-size: 0.82rem;
+    font-size: 0.95rem;
     font-weight: 900;
     text-transform: uppercase;
   }
@@ -306,7 +307,7 @@ const asset = (value: string) => `${base}${value.replace(/^\//, "")}`;
 
   .eyebrow {
     color: var(--teal);
-    font-size: 0.76rem;
+    font-size: 0.9rem;
     font-weight: 900;
     letter-spacing: 0.1em;
     line-height: 1.4;
@@ -444,7 +445,7 @@ const asset = (value: string) => `${base}${value.replace(/^\//, "")}`;
     align-self: flex-start;
     margin-top: 22px;
     color: var(--accent);
-    font-size: 0.82rem;
+    font-size: 0.95rem;
     text-transform: uppercase;
   }
 
@@ -525,18 +526,23 @@ const asset = (value: string) => `${base}${value.replace(/^\//, "")}`;
   }
 
   .seo-bridge {
-    display: grid;
-    grid-template-columns: 0.92fr 1.08fr auto;
-    gap: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
     align-items: center;
     margin: 18px 0;
-    padding: clamp(28px, 5vw, 54px);
+    padding: clamp(36px, 6vw, 72px);
     background: #fff;
     border-left: 10px solid var(--blue);
+    text-align: center;
+  }
+
+  .seo-bridge h2 {
+    max-width: 1000px;
   }
 
   .seo-bridge p {
-    max-width: 640px;
+    max-width: 660px;
   }
 
   .seo-bridge a,
@@ -562,6 +568,7 @@ const asset = (value: string) => `${base}${value.replace(/^\//, "")}`;
     padding: 18px;
     background: var(--ink);
     color: #fff;
+    font-size: 1rem;
     font-weight: 900;
   }
 
